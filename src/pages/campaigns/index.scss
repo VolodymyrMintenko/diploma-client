@@ -1,0 +1,67 @@
+@import "../../Responsive.scss";
+
+.campaigns {
+    &__empty-list {
+        &--container {
+            display: flex;
+            justify-content: center;
+        }
+        &--card {
+            @include sm-up {
+                max-width: 30rem;
+            }
+            box-sizing: border-box;
+            width: 100%;
+            height: 11rem;
+            &.campaigns__empty-list--action-area {
+                justify-content: center;
+            }
+            form {
+                display: flex;
+                .MuiFormControl-root {
+                    flex-grow: 1;
+                }
+                button {
+                    height: 4rem;
+                }
+            }
+        }
+        &--action-area {
+            padding: 1rem !important;
+            display: flex !important;
+            flex-direction: column;
+            text-align: center;
+
+            svg {
+                font-size: 2.5rem;
+            }
+        }
+    }
+    &__header {
+        display: flex;
+        align-items: center;
+        height: 4.25rem;
+
+        // Fix sliding card overflow
+        overflow: hidden;
+        padding: 2rem 1rem;
+        margin: -2rem -1rem;
+        // End fix sliding card overflow
+
+        &--actions {
+            margin-left: auto;
+        }
+        &--actions-card {
+            padding: 1rem;
+            margin-top: 1rem;
+            position: relative;
+            form {
+                display: flex;
+                button {
+                    margin: auto 0;
+                }
+            }
+        }
+    }
+}
+  

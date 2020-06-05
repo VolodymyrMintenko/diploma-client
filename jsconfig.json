@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "baseUrl": "src"
+  },
+  "exclude": ["node_modules", "build", "coverage", "dist", "lib"]
+}

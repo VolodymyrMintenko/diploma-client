@@ -1,0 +1,45 @@
+.flipper {
+  // &-enter {
+  //   opacity: 0;
+  //   &-active {
+  //     opacity: 1;
+  //     transition: opacity 200ms;
+  //   }
+  // }
+  // &-exit {
+  //   opacity: 1;
+  //   &-active {
+  //     opacity: 0;
+  //     transition: opacity 200ms;
+  //   }
+  // }
+  &__container {
+    perspective: 1000px;
+  }
+  
+  &__item {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+  
+    position: relative;
+
+    &.flipped {
+      transform: rotateY(180deg);
+    }
+    .flipper__item--front, .flipper__item--back {
+      backface-visibility: hidden;
+    
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .flipper__item--front {
+      z-index: 2;
+      /* for firefox 31 */
+      transform: rotateY(0deg);
+    }
+    .flipper__item--back {
+      transform: rotateY(180deg);
+    }
+  }
+}

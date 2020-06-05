@@ -1,0 +1,15 @@
+.navigation {
+  &__desktop {
+    &--profile {
+      margin-left: auto;
+    }
+    &--menu-item:not(:last-child) {
+      margin-right: 1rem;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.auth {
+  &__container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
+  }
+
+  &__card {
+    padding: 1rem;
+  }
+
+  &__submit-container {
+    margin-top: 1rem;
+    display: flex;
+
+    & a {
+      display: block;
+      padding: 0.25rem 0;
+    }
+    & .auth__login-btn {
+      margin-left: auto;
+    }
+    & .MuiLink-button {
+      display: block;
+      line-height: 1.5rem;
+    }
+  }
+}

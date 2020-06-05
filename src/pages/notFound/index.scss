@@ -1,0 +1,17 @@
+@import "../../Responsive.scss";
+
+.not-found-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+
+  @include sm-up {
+    min-height: calc(100vh - 4rem);
+  }
+
+  & > h1 {
+    text-align: center;
+  }
+}

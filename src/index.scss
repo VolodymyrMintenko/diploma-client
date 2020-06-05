@@ -1,0 +1,41 @@
+@import './Responsive.scss';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.d-flex {
+  display: flex;
+}
+
+#root {
+  & > section {
+    padding: 1rem;
+    @include xs-down {
+      padding: 1rem 0;
+      & > :not(.MuiPaper-root) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+      }
+      & > .MuiPaper-root {
+        border-radius: 0;
+      }
+      &:last-child {
+        margin-bottom: 56px;
+      }
+    }
+  }
+}
+

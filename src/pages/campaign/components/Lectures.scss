@@ -1,0 +1,52 @@
+.videop {
+    width: 360px;
+    height: 240px;
+    display: flex;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+
+  }
+  #videos-container{
+
+    margin-right: 50px;
+  }
+
+.flex{
+    display: flex;
+    padding: 50px;
+    justify-content: space-around;
+}
+.experiment{
+    width: 720px;
+    height: 480px;
+}
+#audioSource{
+  width: 360px;
+  border-radius: 3px;
+  padding: 4px;
+  font-size: 14px;
+}
+#videoSource{
+  width: 360px;
+  border-radius: 3px;
+  padding: 4px;
+  font-size: 14px;
+}
+.flex1{
+  display: flex;
+}
+.select{
+  margin-left: 25px;
+} 
+.sharelink{
+  font-size: 20px;
+  color: #80cbc4;
+  margin-left: 15px;
+}
+.sharelink:focus{
+  border-bottom: 1px solid;
+}
+.sharelink:active {
+  color: red;
+}
