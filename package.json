@@ -36,8 +36,8 @@
     "redux-logger": "^3.0.6"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "GENERATE_SOURCEMAP=false react-app-rewired build",
+    "start": "node server/server.js",
+    "build": "react-app-rewired build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
