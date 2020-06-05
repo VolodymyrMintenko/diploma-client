@@ -7,13 +7,11 @@ const configureStore = (state = {}) => {
   let middlewares = [thunkMiddleware];
   let enhancers = applyMiddleware(...middlewares);
 
-  if (process.env.NODE_ENV === "development") {
-    const composeWithDevTools = require("redux-devtools-extension")
-      .composeWithDevTools;
-    const logger = require("redux-logger").default;
-    middlewares.push(logger);
-    enhancers = composeWithDevTools(applyMiddleware(...middlewares));
-  }
+  const composeWithDevTools = require("redux-devtools-extension")
+    .composeWithDevTools;
+  const logger = require("redux-logger").default;
+  middlewares.push(logger);
+  enhancers = composeWithDevTools(applyMiddleware(...middlewares));
 
   return createStore(root, state, enhancers);
 };
