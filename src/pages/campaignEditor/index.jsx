@@ -2,7 +2,7 @@ import React from "react";
 import useDocumentTitle from "hooks/useDocumentTitle";
 
 function CampaignEditor() {
-  useDocumentTitle("🎇 Редактор кампаний");
+  useDocumentTitle("🎇 Lesson Editor");
   return <>CampaignEditor</>;
 }
 

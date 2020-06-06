@@ -8,7 +8,7 @@ function CampaignNotActive() {
   return (
     <div className="not-found-page">
       <h1>
-        Похоже эта кампания сейчас не активна.{" "}
+        Disable.{" "}
         <span role="img" aria-label="Anxious Face With Sweat">
           😰
         </span>
