@@ -14,7 +14,7 @@ function CampaignNotActive() {
         </span>
       </h1>
       <Button variant="contained" color="primary" component={RouterLink} to="/">
-        Домой!{" "}
+        Home!{" "}
         <span role="img" aria-label="House With Garden">
           🏡
         </span>
