@@ -16,7 +16,7 @@ class Blog extends React.Component {
       componentDidMount() {
         const { onLoad } = this.props;
     
-        axios('https://diplomamintenko.herokuapp.com//articles')
+        axios('https://diplomamintenko.herokuapp.com/articles')
           .then((res) => onLoad(res.data.payload));
       }
     
