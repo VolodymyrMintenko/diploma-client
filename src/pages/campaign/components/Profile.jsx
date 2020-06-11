@@ -10,19 +10,15 @@ const dispatch = useDispatch();
 const history = useHistory();
   return (
     <>
-    <div className="test">
-      <div>
       <h1 className="d-flex">
         {campaign.name}
         <div className="campaigns__header--actions">
         </div>
       </h1>
-      <Link className="tests" type="button" component={RouterLink} to={`/lectures/${campaign.id}`} >Start lesson</Link><br />
-    <Button className="tests" onClick = {()=>{dispatch(deleteCampaign(campaign.id))
+      <Link type="button" component={RouterLink} to={`/lectures/${campaign.id}`} >Start lesson</Link><br />
+    <Button onClick = {()=>{dispatch(deleteCampaign(campaign.id))
     history.push("/campaigns")
     }} >Delete room</Button>
-    </div>
-    </div>
     </>
   );
 }

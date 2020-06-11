@@ -1,11 +1,11 @@
 import React from "react";
 import { Button } from "@material-ui/core";
 import "./index.scss";
-import useDocumentTitle from "hooks/useDocumentTitle";
+import useDocumentTitle from "../../hooks/useDocumentTitle";
 import { Link as RouterLink } from "react-router-dom";
 
 function NotFound() {
-  useDocumentTitle("👻 Здесь ничего нет");
+  useDocumentTitle("👻 404");
   return (
     <div className="not-found-page">
       <h1>

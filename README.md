@@ -1,7 +1,7 @@
 ## Available Scripts
 
 In the project directory, you can run:
-
+REACT_APP_HOST_URL=https://diplomamintenko.herokuapp.com
 ### `npm ci`
 
 Install all dependencies!

@@ -1,7 +1,7 @@
 import urls from "utils/urls";
 import request from "utils/request";
 import storage from "utils/storage";
-import { enqueueSnackbar } from "components/notifier/NotifierActions";
+import { enqueueSnackbar } from "../../../components/notifier/NotifierActions";
 
 export const AUTH_LOGIN_SUCCESS = "auth/AUTH_LOGIN_SUCCESS";
 export const AUTH_LOGOUT = "auth/AUTH_LOGOUT";

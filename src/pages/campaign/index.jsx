@@ -2,11 +2,11 @@ import React from "react";
 import { useEffect } from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-import useDocumentTitle from "hooks/useDocumentTitle";
+import useDocumentTitle from "../../hooks/useDocumentTitle";
 import { isLoggedIn } from "pages/auth/reducer/selectors";
 import { getCampaign } from "../campaigns/reducer/actions";
 import { hasSelectedCampaign } from "../campaigns/reducer/selectors";
-import Spinner from "components/Spinner";
+import Spinner from "../../components/Spinner";
 import NotFound from "pages/notFound";
 import AdminCampaign from "./components/AdminCampign";
 import UserCampaign from "./components/UserCampaign";
@@ -20,7 +20,7 @@ function Campaign({
   isLoggedIn,
   hasSelectedCampaign
 }) {
-  useDocumentTitle("Кампания");
+  useDocumentTitle("Lesson");
   useEffect(() => {
     getCampaign(match.params.id);
   }, [match, getCampaign]);

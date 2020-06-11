@@ -1,5 +1,5 @@
 import React from "react";
-import useDocumentTitle from "hooks/useDocumentTitle";
+import useDocumentTitle from "../../../hooks/useDocumentTitle";
 import { Button, Paper, Slide } from "@material-ui/core";
 import { connect } from "react-redux";
 import { useState } from "react";

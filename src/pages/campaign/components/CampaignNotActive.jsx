@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@material-ui/core";
-import useDocumentTitle from "hooks/useDocumentTitle";
+import useDocumentTitle from "../../../hooks/useDocumentTitle";
 import { Link as RouterLink } from "react-router-dom";
 
 function CampaignNotActive() {

@@ -9,12 +9,12 @@ import { Container, Paper, Link, Button } from "@material-ui/core";
 
 import { Formik, Form, Field } from "formik";
 import signinValidationSchema from "services/validation/signinValidationSchema";
-import useDocumentTitle from "hooks/useDocumentTitle";
+import useDocumentTitle from "../../hooks/useDocumentTitle";
 import { Link as RouterLink } from "react-router-dom";
 
 import "./index.scss";
-import PasswordField from "components/forms/PasswordField";
-import TextField from "components/forms/TextField";
+import PasswordField from "../../components/forms/PasswordField";
+import TextField from "../../components/forms/TextField";
 
 function Auth({ isLoggedIn, authLogin, history }) {
   useDocumentTitle("Sign In");

@@ -42,6 +42,39 @@ function DesktopNavigation({
         >
           Lessons
         </Button>
+        <Button
+          className="navigation__desktop--menu-item"
+          variant="outlined"
+          color={
+            valueMap.campaigns.test(location.pathname) ? "primary" : "inherit"
+          }
+          component={RouterLink}
+          to={`/users`}
+        >
+          Users
+        </Button>
+        <Button
+          className="navigation__desktop--menu-item"
+          variant="outlined"
+          color={
+            valueMap.campaigns.test(location.pathname) ? "primary" : "inherit"
+          }
+          component={RouterLink}
+          to={`/test`}
+        >
+          Test
+        </Button>
+        <Button
+          className="navigation__desktop--menu-item"
+          variant="outlined"
+          color={
+            valueMap.campaigns.test(location.pathname) ? "primary" : "inherit"
+          }
+          component={RouterLink}
+          to={`/blog`}
+        >
+          Forum
+        </Button>
         <ProfileIcon isLoggedIn={isLoggedIn} authLogout={authLogout} />
       </Toolbar>
     </AppBar>

@@ -34,13 +34,13 @@ function MobileNavigation({ location, history, lastCampaignId }) {
   return (
     <BottomNavigation value={value} onChange={handleChange}>
       <BottomNavigationAction
-        label="Кампании"
+        label="Room"
         value="campaigns"
         icon={<PhotoLibraryIcon />}
       />
       {lastCampaignId ? (
         <BottomNavigationAction
-          label="Кампания"
+          label="Room"
           value="current-campaign"
           icon={<FilterHdrIcon />}
           disabled={!lastCampaignId}
