@@ -47,10 +47,10 @@ class Blog extends React.Component {
               <Form />
                 </div>
             <div className="flex">
-              <div className="flex">
+              <div>
                 {articles.map((article) => {
                   return (
-                    <div className="card my-3">
+                    <div className="card">
                       <div className="title">
                         {article.title}
                       </div>
