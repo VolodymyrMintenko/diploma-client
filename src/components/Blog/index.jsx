@@ -46,7 +46,6 @@ class Blog extends React.Component {
               <div>
               <Form />
                 </div>
-            <div className="flex">
               <div>
                 {articles.map((article) => {
                   return (
@@ -72,7 +71,6 @@ class Blog extends React.Component {
                   )
                 })}
               </div>
-            </div>
  
           </div>
         );
