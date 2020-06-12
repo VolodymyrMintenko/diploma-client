@@ -46,14 +46,15 @@ class Blog extends React.Component {
               <div>
               <Form />
                 </div>
-              <div>
+            <div className="flex">
+              <div className="marg">
                 {articles.map((article) => {
                   return (
                     <div className="card">
                       <div className="title">
                         {article.title}
                       </div>
-                      <div className="description">
+                      <div>
                         {article.body}
                         <p className="mt-5 text-muted"><b>{article.author}</b> {moment(new Date(article.createdAt)).fromNow()}</p>
                       </div>
@@ -71,6 +72,7 @@ class Blog extends React.Component {
                   )
                 })}
               </div>
+            </div>
  
           </div>
         );
